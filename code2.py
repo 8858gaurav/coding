@@ -1,3 +1,10 @@
+# !apt-get update 
+# !apt-get install openjdk-17-jdk-headless -qq > /dev/null 
+
+# import os 
+# os.environ["JAVA_HOME"] = "/usr/lib/jvm/java-17-openjdk-amd64" 
+# os.environ["SPARK_HOME"] = "/usr/local/lib/python3.11/dist-packages/pyspark"
+
 from pyspark.sql import SparkSession
 
 spark = SparkSession.builder \
